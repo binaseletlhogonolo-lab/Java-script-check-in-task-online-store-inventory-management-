@@ -1,0 +1,1 @@
+# Java-script-check-in-task-online-store-inventory-management-
