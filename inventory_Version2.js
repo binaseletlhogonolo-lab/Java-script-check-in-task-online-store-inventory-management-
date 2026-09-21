@@ -5,14 +5,13 @@ const inventory = {
   monitor: [150.00, 8]
 };
 
-/**
- * Looks up the details of a product.
- *
- * Inventory format:
- * productName: [unitPrice, quantity]
- */
-function lookupItem(inventory, itemName) {
-  if (!inventory[itemName]) {
+/
+  Looks up the details of a product.
+ 
+  Inventory format:
+  productName: [unitPrice, quantity]
+ /
+function lookupItem(inventory, itemName) 
     return `Item "${itemName}" was not found.`;
   }
 
@@ -25,10 +24,10 @@ function lookupItem(inventory, itemName) {
   };
 }
 
-/**
- * Updates the quantity of an existing product.
- */
-function restockItem(inventory, itemName, newQuantity) {
+/
+    Updates the quantity of an existing product.
+
+   function restockItem(inventory, itemName, newQuantity) {
   if (!inventory[itemName]) {
     return `Item "${itemName}" was not found.`;
   }
@@ -42,9 +41,9 @@ function restockItem(inventory, itemName, newQuantity) {
   return inventory;
 }
 
-/**
- * Calculates the total value of one product's stock.
- */
+
+/  Calculates the total value of one product's stock.
+ /
 function calculateInventoryValue(inventory, itemName) {
   if (!inventory[itemName]) {
     return `Item "${itemName}" was not found.`;
